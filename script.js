@@ -6,6 +6,7 @@ const taskForm = document.getElementById("task-form");
 const taskInput = document.getElementById("task-input");
 const taskError = document.getElementById("task-error");
 const totalTasks = document.getElementById("totalTasks");
+const taskCount = document.getElementById("task-count");
 
 // Haetaan tallennetut tehtävät tai luodaan tyhjä taulukko
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -181,8 +182,17 @@ tasks.forEach(function(task) {
     appendTaskToDOM(task);
 });
 
-// Päivitetään tehtävien kokonaismäärä
+// Päivitetään tehtävien määrät
 function updateTotalTasks() {
+
+    // Kaikkien tehtävien määrä
     totalTasks.textContent = tasks.length;
+
+    // Keskeneräisten tehtävien määrä
+    const onHoldCount = tasks.filter(function(task) {
+        return task.completed === false;
+    }).length;
+
+    // Päivitetään otsikon numero
+    taskCount.textContent = onHoldCount;
 }
-updateTotalTasks();

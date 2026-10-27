@@ -71,6 +71,7 @@ Add at least one screenshot of your working application.
 
 Bell icon and profile icon are not functional, only added for visual effect. They feature css effects etc. but dont actually do anything.
 
+Task counter that is inside the text does not update when completing tasks.
 
 ## Self-assessment and learning reflection
 
