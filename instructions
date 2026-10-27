@@ -23,19 +23,18 @@ List at least three features you plan to include in your application:
 
 Add an image of your hand-drawn or digitally created application wireframe here. The wireframe should show the main view and the most important elements of your application.
 
-(image.png)
+![To-do-list application wireframe](images/wireframe.png)
 
 ## Web links
 
-- **Published application:** [Add your GitHub Pages URL here](https://yourusername.github.io/your-repository/)
-- **GitHub repository:** [Add your repository URL here](https://github.com/yourusername/your-repository)
+- **Published application:** [Add your GitHub Pages URL here](https://sacce656.github.io/project-1-DOM/)
+- **GitHub repository:** [Add your repository URL here](https://github.com/SaCCe656/project-1-DOM)
 - **Project video presentation:** [Add your video URL here](https://example.com/)
 
 ## About the application
 
-**[Project name]** is a web application that ...
+**[to-do-list]** is a web application that tracks the users inputted tasks. The user can add tasks, remove them and make them completed from the interface. The application is very simple and easy to use even with little to no technical skills.
 
-Briefly describe the purpose of your application and its main features.
 
 ## Technologies
 
@@ -45,6 +44,7 @@ Describe the technologies you used and their role in your project.
 - CSS – styling and layout
 - JavaScript – functionality, DOM scripting and form validation
 - localStorage – saving data in the browser, if used
+- Cloudfare pictures - for visual style and making picture adding easier.
 
 ## How to use the application
 
@@ -65,32 +65,35 @@ Write short instructions for using the application.
 
 Add at least one screenshot of your working application.
 
-![Screenshot of the application](image-1.png)
+![Screenshot of the application](images/website.png)
 
 ## Known issues / limitations
 
 Bell icon and profile icon are not functional, only added for visual effect. They feature css effects etc. but dont actually do anything.
 
 
-## Division of work
-
-*Complete this section only if you worked in a pair.*
-
-Describe how the work was divided and how the collaboration went.
-
-- Author 1: ...
-- Author 2: ...
-
 ## Self-assessment and learning reflection
 
 Reflect on your work and learning process.
 
 - What did I succeed in?
+Planning a website having javascript in mind in the process. Learned what techniques are required to make such a list with html and javascript combined
+
 - What was challenging?
+Remembering all the techniques used previously on the course. It had been a few since I used some of the things in javascript so I had a hard time remembering.
+
 - What would I improve if I had more time?
+Starting the project earlier, it required more time than I expected. 
+
 - What did I learn about HTML, CSS, JavaScript and DOM scripting?
+
+I learned in action how to create and modify HTML using DOM scripting. Also reminded of previously learned things like localstorage and event listeners. I learned trough the video I watched about cloudfare pictures. It made adding small icons really easy and simple.
+
 - What remained unclear or what would I like to learn more about?
-- My self-assessed project grade: **xx/10 points**
+
+In the start of the project I also planed to include a percent counter of how many % of tasks were completed. After starting I realized it was too hard for my skills :D
+
+- My self-assessed project grade: **5/10 points**
 
 ## Sources and acknowledgements
 
