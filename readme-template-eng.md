@@ -29,7 +29,7 @@ Add an image of your hand-drawn or digitally created application wireframe here.
 
 - **Published application:** [Add your GitHub Pages URL here](https://sacce656.github.io/project-1-DOM/)
 - **GitHub repository:** [Add your repository URL here](https://github.com/SaCCe656/project-1-DOM)
-- **Project video presentation:** [Add your video URL here](https://example.com/)
+- **Project video presentation:** [Add your video URL here](https://www.youtube.com/watch?v=oJs0XyQ0-iM)
 
 ## About the application
 
