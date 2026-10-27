@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+
+    <!-- Linkitetään oma CSS-tiedosto -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ladataan Font Awesome -ikonikirjasto -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sisältää kaikki sivun elementit -->
+    <div class="container">
+
+        <!-- Yläpalkki -->
+        <div class="header">
+
+            <!-- Tehtävän syöttökenttä -->
+            <form class="search-bar" id="task-form">
+
+                <i class="fas fa-plus"></i>
+
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter a task"
+                >
+
+                <!-- Virheilmoitus -->
+                <span id="task-error" class="error-message"></span>
+
+            </form>
+
+            <!-- Yläpalkin kuvakkeet -->
+            <div class="header-icons">
+
+                <!-- Ilmoituskuvakkeen painike -->
+                <button class="icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Käyttäjäkuvakkeen painike -->
+                <button class="icon-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Pääsisältö -->
+        <div class="main-content">
+
+            <!-- Otsikkoalue -->
+            <div class="title-selection">
+
+                <!-- Tervehdysteksti -->
+                <div class="greeting" id="greeting">
+                    Hello user!
+                </div>
+
+                <!-- Otsikko ja painike samalla rivillä -->
+                <div class="task-header">
+
+                    <h1 class="task-title">
+                        You have
+                        <span class="task-count" id="task-count">0</span>
+                        tasks today
+                    </h1>
+
+                    <!-- Tehtävän lisäämispainike -->
+                    <button
+                        class="add-task-btn"
+                        id="add-task-btn"
+                        type="submit"
+                        form="task-form"
+                    >
+                        <i class="fas fa-plus"></i>
+                        Add new task
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- On hold -osio -->
+            <div class="section">
+
+                <div class="selection-header">
+                    <h2>On hold</h2>
+                </div>
+
+                <!-- Keskeneräiset tehtävät -->
+                <div id="on-hold-tasks"></div>
+
+            </div>
+
+            <!-- Completed-osio -->
+            <div class="section">
+
+                <div class="selection-header">
+                    <h2>Completed</h2>
+                </div>
+
+                <!-- Valmiit tehtävät -->
+                <div id="completed-tasks"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Sivupalkki -->
+        <div class="sidebar">
+
+            <div class="sidebar-section">
+
+                <div class="sidebar-title">
+                    Results Summary
+                </div>
+
+                <!-- Tehtävien kokonaismäärä -->
+                <div class="stat-card">
+
+                    <div class="stat-label">
+                        Total tasks
+                    </div>
+
+                    <div class="stat-value" id="totalTasks">
+                        0
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Linkitetään JavaScript-tiedosto -->
+    <script src="script.js"></script>
+
+</body>
+</html>
